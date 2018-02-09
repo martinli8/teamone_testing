@@ -7,7 +7,7 @@ def max_diff(my_list):
             n = diff
     return n
 
-  
+
 def maxMin(inputList):
     myMin = min(inputList)
     myMax = max(inputList)
