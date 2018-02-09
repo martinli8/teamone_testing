@@ -6,6 +6,7 @@
   ],
   "script": [
     "pytest -v --pep8"
+    "pytest test_maxmin.py"
   ],
   "group": "stable",
   "dist": "trusty",
