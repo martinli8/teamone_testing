@@ -6,6 +6,7 @@
   ],
   "script": [
     "pytest -v --pep8"
+    "pytest"
   ],
   "group": "stable",
   "dist": "trusty",
