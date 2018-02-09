@@ -6,7 +6,7 @@
   ],
   "script": [
     "pytest -v --pep8"
-    "pytest test_listadd.py"
+    "pytest -v test_listadd.py"
   ],
   "group": "stable",
   "dist": "trusty",
