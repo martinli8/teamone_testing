@@ -1,6 +1,4 @@
-pytest
-py
-pluggy
+pytest>=3.2.1
 pytest-pep8
 pytest-cov
 numpy
