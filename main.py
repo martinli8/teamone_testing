@@ -17,11 +17,11 @@ def maxMin(inputList):
 
 
 def add_list_numbers(list_var):
+    try:
+        import numpy as np
+    except ImportError:
+        raise ImportError('Numpy not found')
     final_sum = 0
     for i in list_var:
         final_sum += i
     return final_sum
-
-
-if __name__ == "__main__":
-    main()
