@@ -28,6 +28,6 @@ def add_list_numbers(list_var):
     for x in list_var:
         if isinstance(x, (int, long, float, complex)):
             continue
-        else
+        else:
             raise  TypeError('List must be made out of numbers only')
     return np.sum(list_var)
