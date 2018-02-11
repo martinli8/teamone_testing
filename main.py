@@ -20,5 +20,5 @@ def add_list_numbers(list_var):
     try:
         import numpy as np
     except ImportError:
-        raise ImportError('Module Numpy not found, please check numpy is installed')
+        raise ImportError('Module Numpy not found.')
     return np.sum(list_var)
