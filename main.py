@@ -26,8 +26,8 @@ def add_list_numbers(list_var):
     except ImportError:
         raise ImportError('Module Numbers not found.')
     for x in list_var:
-        if isinstance(x, (int, long, float, complex)):
+        if isinstance(x, (int, float, complex)):
             continue
         else:
-            raise  TypeError('List must be made out of numbers only')
+            raise TypeError('List must be made out of numbers only')
     return np.sum(list_var)
