@@ -21,7 +21,3 @@ def add_list_numbers(list_var):
     for i in list_var:
         final_sum += i
     return final_sum
-
-
-if __name__ == "__main__":
-    main()
