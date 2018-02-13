@@ -17,7 +17,7 @@ def maxMin(inputList):
 
 
 def add_list_numbers(list_var):
-    if len(list_var)==0:
+    if len(list_var) == 0:
         raise ValueError('Input list is empty')
     try:
         import numpy as np
