@@ -17,6 +17,8 @@ def maxMin(inputList):
 
 
 def add_list_numbers(list_var):
+    if len(list_var)==0:
+        raise ValueError('Input list is empty')
     try:
         import numpy as np
     except ImportError:
@@ -29,5 +31,5 @@ def add_list_numbers(list_var):
         if isinstance(x, (int, float, complex)):
             continue
         else:
-            raise TypeError('List must be made out of numbers only')
+            raise TypeError('List elements must be int, float, or complex')
     return np.sum(list_var)
