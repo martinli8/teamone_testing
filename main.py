@@ -18,7 +18,7 @@ def maxMin(inputList):
 
 def add_list_numbers(list_var):
     """
-    Adds a list of numbers
+    Adds a lenist of numbers
 
     :param list_var: Is a list of numbers (int, float, complex)
     :returns: Addition of values in list
@@ -26,12 +26,12 @@ def add_list_numbers(list_var):
     :raises ImportError: If numpy or numbers not installed in environment
     :raises TypeError: If element in list_var is not an int, float, or complex
     """
-    if len(list_var) == 0:
-        raise ValueError('Input list is empty')
     try:
         import numpy as np
     except ImportError:
         raise ImportError('Module Numpy not found.')
+    if len(list_var) == 0:
+        raise ValueError('Input list is empty')
     try:
         import numbers
     except ImportError:

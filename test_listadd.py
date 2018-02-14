@@ -18,7 +18,7 @@ def test_listadd():
         add_list_numbers([])
 
 
-@pytest.mark.xfail(reason="Numpy and numbers should be installed")
+# @pytest.mark.xfail(reason="Numpy and numbers should be installed")
 def test_import_add_list():
     """ Pytests function for testing the add_list_numbers
     for numpy or numbers import error. This test should fail
