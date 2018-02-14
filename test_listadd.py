@@ -3,12 +3,11 @@ import pytest
 
 @pytest.mark.xfail(reason="xfail if numpy/numbers not installed, else XPASS")
 def test_listadd():
-    
-    """ 
+    """
     Unit test (Pytest) function for add_list_numbers() in main.py
 
     :returns: xfail if numpy/numbers modules are not installed
-    :returns: XPASS if numpy/numbers are installed and if the function is correctly executed.
+    :returns: XPASS if numpy/numbers are installed & function is correct.
     """
     from main import add_list_numbers
     added_output = add_list_numbers([3, 5])
@@ -27,9 +26,9 @@ def test_listadd():
 def test_import_add_list():
     """ Unit test (Pytest) function to test that add_list_numbers()
     is importing numpy and numbers.
-    
-    :returns: XPASS if numpy/numbers modules are not installed
-    :returns: Xfail if numpy/numbers are installed
+
+    :returns: XPASS if numpy/numbers modules are not installed.
+    :returns: Xfail if numpy/numbers are installed.
     """
     from main import add_list_numbers
     with pytest.raises(ImportError):
