@@ -17,13 +17,14 @@ def maxMin(inputList):
 
 
 def add_list_numbers(list_var):
-    """Adds a list of numbers
+    """
+    Adds a list of numbers
     
-    :param list_var : Is a list of numbers (int, float, complex)
-    :returns : Addition of values in list
-    :raises ValueError : If list_var is empty
-    :raises ImportError : If numpy or numbers not installed in environment
-    :raises TypeError : If element in list_var is not an int, float, or complex
+    :param list_var: Is a list of numbers (int, float, complex)
+    :returns: Addition of values in list
+    :raises ValueError: If list_var is empty
+    :raises ImportError: If numpy or numbers not installed in environment
+    :raises TypeError: If element in list_var is not an int, float, or complex
     """
     if len(list_var) == 0:
         raise ValueError('Input list is empty')
