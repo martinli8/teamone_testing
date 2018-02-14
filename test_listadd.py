@@ -2,6 +2,9 @@ import pytest
 
 
 def test_listadd():
+    """
+    Pytest function for testing the add_list_numbers function in main.py
+    """
     from main import add_list_numbers
     added_output = add_list_numbers([3, 5])
     added_output_2 = add_list_numbers([-4, 10, 3])
@@ -17,6 +20,9 @@ def test_listadd():
 
 @pytest.mark.xfail(reason="Numpy and numbers should be installed")
 def test_import_add_list():
+    """ Pytests function for testing the add_list_numbers 
+    for numpy or numbers import error. This test should fail
+    when Numbers and Numpy modules are installed."""
     from main import add_list_numbers
     with pytest.raises(ImportError):
         add_list_numbers([3, 5])  # If numpy or numbers not installed
