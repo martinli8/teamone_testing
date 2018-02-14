@@ -19,7 +19,7 @@ def maxMin(inputList):
 def add_list_numbers(list_var):
     """
     Adds a list of numbers
-    
+
     :param list_var: Is a list of numbers (int, float, complex)
     :returns: Addition of values in list
     :raises ValueError: If list_var is empty
