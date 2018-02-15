@@ -8,7 +8,7 @@ def test_max_diff():
     test_output_value = (86, 133, 14.3)
     for n, t in enumerate(test_input_lists):
         assert max_diff(t) == test_output_value[n]
-    test_bad_lists1 = ([1 ,2, 3, 'poop'], [1, 5, 'poop', 'pizza', 65],
+    test_bad_lists1 = ([1, 2, 3, 'poop'], [1, 5, 'poop', 'pizza', 65],
                        ['poop', 99, 8])
     test_bad_lists2 = ([], [24])
     for n, t in enumerate(test_bad_lists1):
