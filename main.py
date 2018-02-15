@@ -31,7 +31,7 @@ def max_diff(my_list):
         logging.warning('Not enough values to calculate difference')
         raise ValueError('List too small, no difference to compare!')
     for i in range(len(my_list)-1):
-        if isinstance(my_list[i], (int, float, complex)) and
+        if isinstance(my_list[i], (int, float, complex)) and \
            isinstance(my_list[i+1], (int, float, complex)):
             diff = abs(my_list[i+1] - my_list[i])
             if diff > n:
