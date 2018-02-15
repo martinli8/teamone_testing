@@ -1,7 +1,7 @@
 import pytest
 
 
-# @pytest.mark.xfail(reason="xfail if numpy/numbers not installed, else XPASS")
+@pytest.mark.xfail(reason="xfail if numpy/numbers not installed, else XPASS")
 def test_listadd():
     """
     Unit test (Pytest) function for add_list_numbers() in main.py
