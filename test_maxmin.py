@@ -1,5 +1,6 @@
 import pytest
 
+
 def test_maxMin():
     from main import maxMin
     testingList = [1, 4, 5, 6, 581]
