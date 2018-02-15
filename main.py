@@ -13,7 +13,7 @@ def max_diff(my_list):
 
 def maxMin(inputList):
     """
-    Finds the max and min in a list of positive values and returns it in a tuple
+    Finds the max and min in a list of positive values and returns a tuple
 
     :param inputList: Is a list of positive values
     :returns: Tuple of the max and min values

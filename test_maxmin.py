@@ -1,6 +1,7 @@
 import pytest
 
-@pytest.mark.xfail(reason = "xfail if numpy not installed, else xPass")
+
+@pytest.mark.xfail(reason="xfail if numpy not installed, else xPass")
 def test_maxMin():
     from main import maxMin
     testingList = [1, 4, 5, 6, 581]
@@ -11,6 +12,7 @@ def test_maxMin():
         maxMin([1, -4, 5])
     with pytest.raises(TypeError):
         maxMin((1, 4, 5))
+
 
 @pytest.mark.xfail(reason="xPass if Numpy not installed, else xfail")
 def test_maxMin_import():
