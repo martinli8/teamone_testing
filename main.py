@@ -56,4 +56,3 @@ def add_list_numbers(list_var):
     value = np.sum(list_var)
     logging.info(value)
     return value
-
