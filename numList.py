@@ -1,18 +1,19 @@
 import logging
 
+
 class numList:
     """This is a numList class.
 
-    __init sets the various attributes.
-
     Attributes:
-        maxMin (tuple): tuple of the Max and Min values in the list
-        max_diff (list): list of the highest diff between 2 adj values in list
-        list_add (int): sum of all the values in the list
+        :maxMin (tuple): tuple of the Max and Min values in the list
+
+        :max_diff (list): list of the highest diff between 2 adj values in list
+
+        :list_add (int): sum of all the values in the list
 
     """
 
-    def __init__(self, myList = []):
+    def __init__(self, myList=[]):
         self.list = myList
         self.maxMin = None
         self.max_diff = None
