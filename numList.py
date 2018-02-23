@@ -6,16 +6,20 @@ class numList:
     __init sets the various attributes.
 
     Attributes:
-        maxMin (list): string
+        maxMin (tuple): tuple of the Max and Min values in the list
+        max_diff (list): list of the highest diff between 2 adj values in list
+        list_add (int): sum of all the values in the list
 
     """
 
-    def __init__(self, myList = None, maxMin = None,
-                 max_diff = None, list_add = None):
+    def __init__(self, myList = []):
         self.list = myList
-        self.maxMin = maxMin
-        self.max_diff = max_diff
-        self.list_add = list_add
+        self.maxMin = None
+        self.max_diff = None
+        self.list_add = None
+        self.max_Min()
+        self.find_diff()
+        self.find_sum()
 
     def max_Min(self):
         """
@@ -52,7 +56,7 @@ class numList:
         logging.info(maxMinTuple)
         self.maxMin = maxMinTuple
 
-    def max_diff(self):
+    def find_diff(self):
         """
         Finds maximum difference between two adjacent numbers in a list
 
@@ -82,3 +86,45 @@ class numList:
                 raise TypeError('List elements must be int, float, or complex!')
         logging.debug('Returns %s', str(n))
         self.max_diff = n
+
+    def find_sum(self):
+        """
+        Adds a lenist of numbers
+
+        :param list_var: Is a list of numbers (int, float, complex)
+        :returns: Addition of values in list
+        :raises ValueError: If list_var is empty
+        :raises ImportError: If numpy or numbers not installed in environment
+        :raises TypeError: If element in list_var is not an int, float, or complex
+        """
+        list_var = self.list
+        try:
+            import logging
+        except ImportError:
+            logging.warning('ImportError Logging')
+            raise ImportError('Module Logging not found.')
+        logging.basicConfig(filename='log.txt', level=logging.DEBUG)
+        try:
+            import numpy as np
+        except ImportError:
+            logging.warning('ImportError Numpy')
+            raise ImportError('Module Numpy not found.')
+        if len(list_var) == 0:
+            raise ValueError('Input list is empty')
+        try:
+            import numbers
+        except ImportError:
+            logging.warning('ImportError Numbers')
+            raise ImportError('Module Numbers not found.')
+        if not isinstance(list_var, list):
+            logging.warning('Input is not a list')
+        for x in list_var:
+            if isinstance(x, (int, float, complex)):
+                continue
+            else:
+                logging.warning('List elements must be int, float or complex')
+                raise TypeError('List elements must be int, float, or complex')
+        logging.debug(list_var)
+        value = np.sum(list_var)
+        logging.info(value)
+        self.list_add = value
