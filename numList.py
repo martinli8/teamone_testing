@@ -65,7 +65,7 @@ class numList:
         :returns: Largest difference between two adjacent numbers
         :raises ValueError: If my_list has 0 or 1 elements
         :raises ImportError: If numpy is not installed in environment
-        :raises TypeError: If element in my_list is not an int, float, or complex
+        :raises TypeError: If element in my_list is not an int, float, complex
         """
 
         my_list = self.list
@@ -84,7 +84,7 @@ class numList:
                 if diff > n:
                     n = diff
             else:
-                raise TypeError('List elements must be int, float, or complex!')
+                raise TypeError('List elements must be int, float, complex!')
         logging.debug('Returns %s', str(n))
         self.max_diff = n
 
@@ -96,7 +96,7 @@ class numList:
         :returns: Addition of values in list
         :raises ValueError: If list_var is empty
         :raises ImportError: If numpy or numbers not installed in environment
-        :raises TypeError: If element in list_var is not an int, float, or complex
+        :raises TypeError: If element in list_var is not an int, float,complex
         """
         list_var = self.list
         try:
